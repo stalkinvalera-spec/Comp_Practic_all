@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include "lib_for_lab2.h"
 
 void input_string(char *s, int max)
 {
