@@ -1,0 +1,5 @@
+gdb -batch -x cmds1.txt main2.1.exe > report1.txt 2>&1
+
+gdb -batch -x cmds2.txt main2.2.exe > report2.txt 2>&1
+
+gdb -batch -x cmds3.txt main2.3.exe > report3.txt 2>&1

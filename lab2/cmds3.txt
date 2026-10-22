@@ -1,0 +1,15 @@
+set host-charset UTF-8
+set target-charset UTF-8
+break input_string
+break output_string
+run < input.txt
+where
+info frame
+finish
+where
+continue
+where
+info frame
+finish
+where
+continue

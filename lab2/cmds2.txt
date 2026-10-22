@@ -1,0 +1,16 @@
+set host-charset UTF-8
+set target-charset UTF-8
+break input_string
+break output_string
+run < input2.txt
+where
+info frame
+finish
+where
+delete 1
+continue
+where
+info frame
+finish
+where
+continue

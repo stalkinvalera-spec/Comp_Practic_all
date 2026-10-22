@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <windows.h>
 #include "lib_for_lab2.h"
 
 int is_hex(const char *s)
@@ -19,6 +20,9 @@ int is_hex(const char *s)
 
 int main(void)
 {
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
     char str[MAX_LEN];
 
     printf("Введите строку (буквы и цифры):\n");

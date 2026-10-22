@@ -1,0 +1,39 @@
+Breakpoint 1 at 0x14000184f: file lib_for_lab2.c, line 7.
+Breakpoint 2 at 0x1400018af: file lib_for_lab2.c, line 16.
+[New Thread 27260.0x662c]
+
+Thread 1 hit Breakpoint 1, input_string (s=0x5ffd90 "", max=256) at lib_for_lab2.c:7
+7	    if (fgets(s, max, stdin) == NULL) {
+#0  input_string (s=0x5ffd90 "", max=256) at lib_for_lab2.c:7
+#1  0x00007ff69d5417f4 in main () at main2.3.c:29
+Stack level 0, frame at 0x5ffd70:
+ rip = 0x7ff69d54184f in input_string (lib_for_lab2.c:7); saved rip = 0x7ff69d5417f4
+ called by frame at 0x5ffea0
+ source language c.
+ Arglist at 0x5ffd60, args: s=0x5ffd90 "", max=256
+ Locals at 0x5ffd60, Previous frame's sp is 0x5ffd70
+ Saved registers:
+  rbp at 0x5ffd60, rip at 0x5ffd68, xmm15 at 0x5ffd68
+main () at main2.3.c:31
+31	    if (is_hex(str))
+#0  main () at main2.3.c:31
+
+Thread 1 hit Breakpoint 2, output_string (s=0x7ff69d545088 "Да, это число в шестнадцатеричной системе") at lib_for_lab2.c:16
+16	    printf("%s\n", s);
+#0  output_string (s=0x7ff69d545088 "Да, это число в шестнадцатеричной системе") at lib_for_lab2.c:16
+#1  0x00007ff69d541813 in main () at main2.3.c:32
+Stack level 0, frame at 0x5ffd70:
+ rip = 0x7ff69d5418af in output_string (lib_for_lab2.c:16); saved rip = 0x7ff69d541813
+ called by frame at 0x5ffea0
+ source language c.
+ Arglist at 0x5ffd60, args: s=0x7ff69d545088 "Да, это число в шестнадцатеричной системе"
+ Locals at 0x5ffd60, Previous frame's sp is 0x5ffd70
+ Saved registers:
+  rbp at 0x5ffd60, rip at 0x5ffd68, xmm15 at 0x5ffd68
+0x00007ff69d541813 in main () at main2.3.c:32
+32	        output_string("Да, это число в шестнадцатеричной системе");
+#0  0x00007ff69d541813 in main () at main2.3.c:32
+[Thread 27260.0x662c exited with code 0]
+Введите строку (буквы и цифры):
+Да, это число в шестнадцатеричной системе
+[Inferior 1 (process 27260) exited normally]

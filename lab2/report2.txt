@@ -1,0 +1,41 @@
+Breakpoint 1 at 0x1400018af: file lib_for_lab2.c, line 7.
+Breakpoint 2 at 0x14000190f: file lib_for_lab2.c, line 16.
+[New Thread 14788.0x85b4]
+
+Thread 1 hit Breakpoint 1, input_string (s=0x5ffd80 "", max=256) at lib_for_lab2.c:7
+7	    if (fgets(s, max, stdin) == NULL) {
+#0  input_string (s=0x5ffd80 "", max=256) at lib_for_lab2.c:7
+#1  0x00007ff7073517c0 in main () at main2.2.c:29
+Stack level 0, frame at 0x5ffc50:
+ rip = 0x7ff7073518af in input_string (lib_for_lab2.c:7); saved rip = 0x7ff7073517c0
+ called by frame at 0x5ffea0
+ source language c.
+ Arglist at 0x5ffc40, args: s=0x5ffd80 "", max=256
+ Locals at 0x5ffc40, Previous frame's sp is 0x5ffc50
+ Saved registers:
+  rbp at 0x5ffc40, rip at 0x5ffc48, xmm15 at 0x5ffc48
+main () at main2.2.c:31
+31	    printf("Введите N:\n");
+#0  main () at main2.2.c:31
+
+Thread 1 hit Breakpoint 2, output_string (s=0x5ffd80 "ghcdefab") at lib_for_lab2.c:16
+16	    printf("%s\n", s);
+#0  output_string (s=0x5ffd80 "ghcdefab") at lib_for_lab2.c:16
+#1  0x00007ff70735188c in main () at main2.2.c:45
+Stack level 0, frame at 0x5ffc50:
+ rip = 0x7ff70735190f in output_string (lib_for_lab2.c:16); saved rip = 0x7ff70735188c
+ called by frame at 0x5ffea0
+ source language c.
+ Arglist at 0x5ffc40, args: s=0x5ffd80 "ghcdefab"
+ Locals at 0x5ffc40, Previous frame's sp is 0x5ffc50
+ Saved registers:
+  rbp at 0x5ffc40, rip at 0x5ffc48, xmm15 at 0x5ffc48
+main () at main2.2.c:46
+46	    return 0;
+#0  main () at main2.2.c:46
+Введите строку:
+Введите N:
+Результат:
+ghcdefab
+[Thread 14788.0x85b4 exited with code 0]
+[Inferior 1 (process 14788) exited normally]
