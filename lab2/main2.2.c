@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "lib_for_lab2.h"
+#include <windows.h>
 
 void swap_edges(char *s, int n)
 {
@@ -17,6 +18,9 @@ void swap_edges(char *s, int n)
 
 int main(void)
 {
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
     char str[MAX_LEN];
     char buf[MAX_LEN];
     int n = 0;
